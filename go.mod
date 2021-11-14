@@ -1,4 +1,4 @@
-module github.com/koyeo/_rand
+module github.com/gozelle/_rand
 
 go 1.15
 
