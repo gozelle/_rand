@@ -33,7 +33,7 @@ func Int64(min, max int64) (r int64, err error) {
 	if min > max {
 		max, min = min, max
 	}
-	result, err := rand.Int(rand.Reader, big.NewInt(max-min))
+	result, err := rand.Int(rand.Reader, big.NewInt(0).Sub(big.NewInt(max), big.NewInt(min)))
 	if err != nil {
 		return
 	}
